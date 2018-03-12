@@ -1,5 +1,36 @@
 body{
-  background-color:3E874E
-  color:white
+  background-color:#008D7A;
+  color:white;
   font-family:sans-serif;
+}
+
+a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  }
+
+.linkpar{
+  color:white;
+}
+
+h1, h2{
+  color:black
+}
+
+a:hover{
+  text-decoration:underline;
+  color:#2C2D2D;
+  }
+
+p em{
+  font-weight:bolder;
+  }
+
+ul{
+  margin-left:-20px;
+}
+
+p{
+  margin-left: 20px;
 }
