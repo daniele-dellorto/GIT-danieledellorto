@@ -1,8 +1,189 @@
-h1{
-  font-size:6em;
+
+.hero-full-screen1 {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen2 {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg2.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen3 {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg3.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen1 .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen1 .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen1 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen1 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen1 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen1 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen1 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen1 .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen1 .top-bar .menu a {
+  color: #fefefe;
   font-weight: bold;
-  color: white;
-  position:absolute;
-  top:50%;
-  transform: translate( 0, -50%);
+}
+
+.hero-full-screen2 .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen2 .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen2 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen2 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen2 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen2 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen2 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen2 .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen2 .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
+.hero-full-screen3 .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen3 .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen3 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen3 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen3 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen3 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen3 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen3 .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen3 .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
 }
