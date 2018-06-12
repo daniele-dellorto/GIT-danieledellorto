@@ -1,4 +1,34 @@
 
+#intro{
+  font-size: 15em;
+  font-weight: bold;
+  color: white;
+}
+
+.text1{
+  font-size:2em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+.quote{
+  font-size:1em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+h1{
+  color: #B52828;
+  font-weight:bold;
+  font-size:6em;
+}
+
+.button{
+ background-color: #B52828;
+ width:40%;
+}
 .hero-full-screen1 {
   height: 100vh;
   display: -webkit-flex;
@@ -17,12 +47,25 @@
   background-size: cover;
 }
 
-#main-title{
-  font-size: 15em;
-  font-weight: bold;
-  color: white;
+.hero-full-screen2 {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg2.jpg") center center no-repeat;
+  background-size: cover;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .menu {
   background: transparent;
@@ -82,18 +125,66 @@
 
 .hero-full-screen1 .top-bar .menu li {
 >>>>>>> parent of 6017800... struttura a scorrimento
+=======
+.hero-full-screen3 {
+  height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg3.png") center center no-repeat;
+  background-size: cover;
+}
+
+.about {
+  height: 100vh;
+>>>>>>> parent of 83efcc7... PROVA
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 .menu a {
   color: #fefefe;
   font-weight: bold;
 =======
+=======
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.paragrafi{
+  text-align:left;
+}
+
+.hero-full-screen3 .middle-content-section{
+  position:relative;
+  top:-40%;
+}
+
+.about .middle-content-section{
+  position:relative;
+  top:-30%;
+  width:60%;
+>>>>>>> parent of 83efcc7... PROVA
 }
 
 .hero-full-screen1 .top-bar .menu a {
@@ -125,6 +216,7 @@
   background: transparent;
 }
 
+<<<<<<< HEAD
 .hero-full-screen2 .top-bar .menu {
   background: transparent;
 }
@@ -156,14 +248,26 @@
 .text1{
   font-size:2em;
   background-color: #B52828;
+=======
+.top-content-section {
+  width: 100%;
+}
+
+.transition {
+  padding: 1rem;
+  text-align: center;
+  color: black;
+>>>>>>> parent of 83efcc7... PROVA
   font-weight: bold;
 }
 
-.quote{
-  font-size:1em;
-  background-color: #B52828;
+.transition svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
 }
 
+<<<<<<< HEAD
 .button{
  background-color: #B52828;
  width:40%;
@@ -195,6 +299,21 @@
 }
 
 .hero-full-screen3 .top-bar .menu li {
+=======
+.top-bar {
+  background: transparent;
+}
+
+.top-bar .menu {
+  background: transparent;
+}
+
+.top-bar .menu-text {
+  color: #fefefe;
+}
+
+.top-bar .menu li {
+>>>>>>> parent of 83efcc7... PROVA
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -203,8 +322,14 @@
           align-items: center;
 }
 
+<<<<<<< HEAD
 .hero-full-screen3 .top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
 >>>>>>> parent of 6017800... struttura a scorrimento
+=======
+.top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+>>>>>>> parent of 83efcc7... PROVA
 }
