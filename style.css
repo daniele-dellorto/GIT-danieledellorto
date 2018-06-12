@@ -1,3 +1,4 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 #intro{
   font-size: 15em;
@@ -29,226 +30,69 @@ h1{
  background-color: #B52828;
  width:40%;
 }
-.hero-full-screen1 {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+
+.hero-full-screen {
+ height: 100vh;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ -webkit-align-items: center;
+     -ms-flex-align: center;
+         align-items: center;
+ -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
+}
+
+.background1{
   background: url("bg1.jpg") center center no-repeat;
   background-size: cover;
 }
 
-.hero-full-screen2 {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.background2{
   background: url("bg2.jpg") center center no-repeat;
   background-size: cover;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.menu {
-  background: transparent;
-  width: 100%;
-}
-.menu li {
-  color: #fefefe;
-=======
-.hero-full-screen3 {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("bg3.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.hero-full-screen1 .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-.hero-full-screen1 .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen1 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen1 .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen1 .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen1 .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen1 .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen1 .top-bar .menu li {
->>>>>>> parent of 6017800... struttura a scorrimento
-=======
-.hero-full-screen3 {
-  height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.background3{
   background: url("bg3.png") center center no-repeat;
   background-size: cover;
 }
 
-.about {
-  height: 100vh;
->>>>>>> parent of 83efcc7... PROVA
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-.menu a {
-  color: #fefefe;
-  font-weight: bold;
-=======
-=======
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("bg1.jpg") center center no-repeat;
+.background4{
+  background: url("bg4.jpg") center center no-repeat;
   background-size: cover;
 }
 
 .paragrafi{
-  text-align:left;
-}
+          text-align:left;
+        }
 
-.hero-full-screen3 .middle-content-section{
-  position:relative;
-  top:-40%;
-}
+.background3 .middle-content-section{
+          position:relative;
+          top:40%;
+        }
+
+.background2 .middle-content-section{
+          position:relative;
+          top:-30%;
+        }
 
 .about .middle-content-section{
-  position:relative;
-  top:-30%;
-  width:60%;
->>>>>>> parent of 83efcc7... PROVA
-}
+          position:relative;
+          top:-30%;
+          width:60%;
+        }
 
-.hero-full-screen1 .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
-}
-
-.hero-full-screen2 .middle-content-section {
+.middle-content-section {
   text-align: center;
-  color: #fefefe;
+  color: white;
+  size:2em;
 }
 
-.hero-full-screen2 .top-content-section {
-  width: 100%;
->>>>>>> parent of 6017800... struttura a scorrimento
-}
-
-.hero-full-screen2 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen2 .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen2 .top-bar {
-  background: transparent;
-}
-
-<<<<<<< HEAD
-.hero-full-screen2 .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen2 .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen2 .top-bar .menu li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero-full-screen2 .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
-}
-
-.hero-full-screen3 .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-<<<<<<< HEAD
-.text1{
-  font-size:2em;
-  background-color: #B52828;
-=======
 .top-content-section {
   width: 100%;
 }
@@ -257,7 +101,6 @@ h1{
   padding: 1rem;
   text-align: center;
   color: black;
->>>>>>> parent of 83efcc7... PROVA
   font-weight: bold;
 }
 
@@ -267,39 +110,6 @@ h1{
   fill: #fefefe;
 }
 
-<<<<<<< HEAD
-.button{
- background-color: #B52828;
- width:40%;
-=======
-.hero-full-screen3 .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen3 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen3 .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen3 .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen3 .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen3 .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen3 .top-bar .menu li {
-=======
 .top-bar {
   background: transparent;
 }
@@ -313,7 +123,6 @@ h1{
 }
 
 .top-bar .menu li {
->>>>>>> parent of 83efcc7... PROVA
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -322,14 +131,7 @@ h1{
           align-items: center;
 }
 
-<<<<<<< HEAD
-.hero-full-screen3 .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
->>>>>>> parent of 6017800... struttura a scorrimento
-=======
 .top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
->>>>>>> parent of 83efcc7... PROVA
 }
