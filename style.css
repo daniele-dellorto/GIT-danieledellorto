@@ -1,4 +1,3 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
 
 .hero-full-screen1 {
   height: 100vh;
@@ -24,12 +23,117 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   color: white;
 }
 
+<<<<<<< HEAD
 .menu {
   background: transparent;
   width: 100%;
 }
 .menu li {
   color: #fefefe;
+=======
+.hero-full-screen3 {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg3.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.hero-full-screen1 .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen1 .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen1 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen1 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen1 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen1 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen1 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen1 .top-bar .menu li {
+>>>>>>> parent of 6017800... struttura a scorrimento
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+<<<<<<< HEAD
+}
+.menu a {
+  color: #fefefe;
+  font-weight: bold;
+=======
+}
+
+.hero-full-screen1 .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+}
+
+.hero-full-screen2 .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+.hero-full-screen2 .top-content-section {
+  width: 100%;
+>>>>>>> parent of 6017800... struttura a scorrimento
+}
+
+.hero-full-screen2 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen2 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen2 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen2 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen2 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen2 .top-bar .menu li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -37,17 +141,18 @@ html, body {margin: 0; height: 100%; overflow: hidden}
       -ms-flex-align: center;
           align-items: center;
 }
-.menu a {
+
+.hero-full-screen2 .top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
 }
 
-.middle-content-section {
+.hero-full-screen3 .middle-content-section {
   text-align: center;
-  color: white;
-  size:2em;
+  color: #fefefe;
 }
 
+<<<<<<< HEAD
 .text1{
   font-size:2em;
   background-color: #B52828;
@@ -62,4 +167,44 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 .button{
  background-color: #B52828;
  width:40%;
+=======
+.hero-full-screen3 .top-content-section {
+  width: 100%;
+}
+
+.hero-full-screen3 .bottom-content-section {
+  padding: 1rem;
+}
+
+.hero-full-screen3 .bottom-content-section svg {
+  height: 3.75rem;
+  width: 3.75rem;
+  fill: #fefefe;
+}
+
+.hero-full-screen3 .top-bar {
+  background: transparent;
+}
+
+.hero-full-screen3 .top-bar .menu {
+  background: transparent;
+}
+
+.hero-full-screen3 .top-bar .menu-text {
+  color: #fefefe;
+}
+
+.hero-full-screen3 .top-bar .menu li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-full-screen3 .top-bar .menu a {
+  color: #fefefe;
+  font-weight: bold;
+>>>>>>> parent of 6017800... struttura a scorrimento
 }
