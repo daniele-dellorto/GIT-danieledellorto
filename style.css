@@ -1,4 +1,35 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
 
+#intro{
+  font-size: 15em;
+  font-weight: bold;
+  color: white;
+}
+
+.text1{
+  font-size:2em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+.quote{
+  font-size:1em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+h1{
+  color: #B52828;
+  font-weight:bold;
+  font-size:6em;
+}
+
+.button{
+ background-color: #B52828;
+ width:40%;
+}
 .hero-full-screen1 {
   height: 100vh;
   display: -webkit-flex;
@@ -49,87 +80,79 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("bg3.jpg") center center no-repeat;
+  background: url("bg3.png") center center no-repeat;
   background-size: cover;
 }
 
-.hero-full-screen1 .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-.hero-full-screen1 .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen1 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen1 .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen1 .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen1 .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen1 .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen1 .top-bar .menu li {
+.about {
+  height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("bg1.jpg") center center no-repeat;
+  background-size: cover;
 }
 
-.hero-full-screen1 .top-bar .menu a {
-  color: #fefefe;
+.paragrafi{
+  text-align:left;
+}
+
+.hero-full-screen3 .middle-content-section{
+  position:relative;
+  top:-40%;
+}
+
+.about .middle-content-section{
+  position:relative;
+  top:-30%;
+  width:60%;
+}
+
+.middle-content-section {
+  text-align: center;
+  color: white;
+  size:2em;
+}
+
+.top-content-section {
+  width: 100%;
+}
+
+.transition {
+  padding: 1rem;
+  text-align: center;
+  color: black;
   font-weight: bold;
 }
 
-.hero-full-screen2 .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-.hero-full-screen2 .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen2 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen2 .bottom-content-section svg {
+.transition svg {
   height: 3.75rem;
   width: 3.75rem;
   fill: #fefefe;
 }
 
-.hero-full-screen2 .top-bar {
+.top-bar {
   background: transparent;
 }
 
-.hero-full-screen2 .top-bar .menu {
+.top-bar .menu {
   background: transparent;
 }
 
-.hero-full-screen2 .top-bar .menu-text {
+.top-bar .menu-text {
   color: #fefefe;
 }
 
-.hero-full-screen2 .top-bar .menu li {
+.top-bar .menu li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -138,52 +161,7 @@
           align-items: center;
 }
 
-.hero-full-screen2 .top-bar .menu a {
-  color: #fefefe;
-  font-weight: bold;
-}
-
-.hero-full-screen3 .middle-content-section {
-  text-align: center;
-  color: #fefefe;
-}
-
-.hero-full-screen3 .top-content-section {
-  width: 100%;
-}
-
-.hero-full-screen3 .bottom-content-section {
-  padding: 1rem;
-}
-
-.hero-full-screen3 .bottom-content-section svg {
-  height: 3.75rem;
-  width: 3.75rem;
-  fill: #fefefe;
-}
-
-.hero-full-screen3 .top-bar {
-  background: transparent;
-}
-
-.hero-full-screen3 .top-bar .menu {
-  background: transparent;
-}
-
-.hero-full-screen3 .top-bar .menu-text {
-  color: #fefefe;
-}
-
-.hero-full-screen3 .top-bar .menu li {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero-full-screen3 .top-bar .menu a {
+.top-bar .menu a {
   color: #fefefe;
   font-weight: bold;
 }
