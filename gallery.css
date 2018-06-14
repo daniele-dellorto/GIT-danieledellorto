@@ -65,7 +65,7 @@ a:hover {
   color: #fefefe;
 }
 
-a:before {
+.link:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -80,7 +80,7 @@ a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.link:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
