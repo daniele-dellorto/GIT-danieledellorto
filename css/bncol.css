@@ -15,9 +15,10 @@ div.gallery img {
     width: 50%;
 }
 
-h1{
+h2{
   color:white;
   text-align:center;
+  font-size:2em;
 }
 
 .bianco{
@@ -26,4 +27,8 @@ h1{
 
 .scomp{
   opacity:0;
+}
+
+.invisible{
+  visibility:hidden;
 }

@@ -27,6 +27,13 @@ h1{
   text-align: center;
 }
 
+h2{
+  color: #B52828;
+  font-weight:bold;
+  font-size:4em;
+  text-align: center;
+}
+
 .large{
  background-color: #B52828;
  width:30%;
@@ -193,6 +200,7 @@ a:hover {
 .c1{
   left:0vw;
   position:absolute;
+  text-align:center;
 }
 
 .c2{
@@ -202,5 +210,17 @@ a:hover {
 
 .column a{
   color:black;
-  text-align: center;
+}
+
+.background3 a{
+  color:black;
+}
+
+.contacts{
+  text-align:center;
+  left:25%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  color:white;
+  font-weight:bold;
 }
