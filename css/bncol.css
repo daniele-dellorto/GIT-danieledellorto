@@ -1,0 +1,29 @@
+html, body {margin: 0; height: 100%; background-color: black;}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
+    padding: 15px;
+    float: left;
+    width: 50%;
+}
+
+h1{
+  color:white;
+  text-align:center;
+}
+
+.bianco{
+  background-color:black;
+}
+
+.scomp{
+  opacity:0;
+}

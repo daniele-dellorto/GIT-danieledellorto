@@ -24,6 +24,7 @@ h1{
   color: #B52828;
   font-weight:bold;
   font-size:6em;
+  text-align: center;
 }
 
 .large{
@@ -117,6 +118,10 @@ h1{
   fill: #fefefe;
 }
 
+#col svg {
+  fill: #B52828;
+}
+
 .top-bar {
   background: transparent;
 }
@@ -176,4 +181,26 @@ a:hover {
 
 .button:hover{
   background-color: #B52828;
+}
+
+.column{
+  height:100vh;
+  width:50vw;
+  display:block;
+  padding: 8%;
+}
+
+.c1{
+  left:0vw;
+  position:absolute;
+}
+
+.c2{
+  position:absolute;
+  right:0vw;
+}
+
+.column a{
+  color:black;
+  text-align: center;
 }

@@ -1,101 +1,94 @@
 <html>
-
 <head>
-
   <script src="jquery.js"></script>
+</head>
+<style>
 
-  <style>
+.quadrato{
+  position:absolute;
+  height:15vh;
+  width:15vh;
+}
 
-  @keyframes infuori{
-    from{left:50%;
-         transform:translate(-50%,-50%)}
-    to{left:150%;
-         transform:translate(-50%,-50%)}
-  }
+.alto{
+  top:0%;
+}
 
-  @keyframes incentro{
-    from{left:150%;
-         transform:translate(-50%,-50%)}
-    to{left:50%;
-         transform:translate(-50%,-50%)}
-  }
+.basso{
+  bottom:0%;
+}
 
-  @keyframes inquadro{
-    from{border-radius:50%}
-    to{border-radius:0%}
-  }
+.sinistra{
+  left:0%;
+}
 
-  .quadrato{
-    height:15vh;
-    width:15vh;
-    position:absolute;
-  }
+.destra{
+  right:0%;
+}
 
-  .cerchio{
-    height:15vh;
-    width:15vh;
-    border-radius:50%;
-    position:absolute;
-  }
+#c1{
+  background-color:red;
+}
 
-  .verde{
-    background-color: green;
-  }
+#c2{
+  background-color:blue;
+}
 
-  .blu{
-    background-color: blue;
-  }
+#c3{
+  background-color:yellow;
+}
 
-  .centro{
-    top:50%;
+#c4{
+  background-color:green;
+}
+
+.centro{
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes oscilla{
+  0%{
     left:50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);}
+  25%{
+    left:25%;
+    transform: translate(-50%,-50%);}
+  75%{
+    left:75%;
+    transform: translate(-50%,-50%);}
+  100%{
+    left:50%;
+    transform: translate(-50%,-50%);}
+}
+
+.oscillante{
+  animation:oscilla 2s linear infinite;
+}
+
+</style>
+<body>
+
+  <div id="c1" class="quadrato alto sinistra"></div>
+  <div id="c2" class="quadrato alto destra"></div>
+  <div id="c3" class="quadrato basso destra"></div>
+  <div id="c4" class="quadrato basso sinistra"></div>
+
+  <script>
+
+  function centra(){
+    if($(this).hasClass("oscillante")){
+    $(this).removeClass("oscillante")
+    $(this).removeClass("centro")}
+    else if($(this).hasClass("centro")){
+      $(this).addClass("oscillante")}
+    else{
+      $(this).addClass("centro")}
   }
 
-  .fuori{
-    top:50%;
-    left:150%;
-    transform: translate(-50%,-50%);
-  }
+  $(".quadrato").click(centra)
 
-  .infuora{
-    animation: infuori 1s forwards;
-  }
-
-  .incentra{
-    animation: incentro 1s forwards;
-  }
-
-  .inquadra{
-    animation: inquadro 1s forwards;
-  }
-
-  </style>
-
-  <body>
-
-    <div id="q1" class="quadrato centro verde"></div>
-    <div id="c1" class="cerchio fuori blu"></div>
-
-    <script>
-
-    function scambio(){
-      $("#q1").addClass("infuora")
-      $("#c1").addClass("incentra")
-    }
-
-    $("#q1").click(scambio)
-
-    function contatore(){
-      $("#c1").removeClass("fuori")
-      $("#c1").addClass("centro")
-      $("#c1").addClass("inquadra")
-    }
-
-    $("#c1").click(contatore)
-
-    </script>
-
-  </body>
-
-  </html>
+  </script>
+</body>
+</html>
