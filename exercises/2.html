@@ -1,0 +1,112 @@
+<html>
+
+<head>
+
+  <script src="jquery.js"></script>
+
+  <style>
+
+@keyframes rotate{
+  from {transform:translate(-50%,-50%) rotate(0deg);}
+  to {transform:translate(-50%,-50%) rotate(360deg);}
+}
+
+.container{
+  height:50vh;
+  width:50vh;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.quadrato{
+  height:5vh;
+  width:5vh;
+  trasform:translate(-50%.-50%);
+}
+
+.alto{
+  position:absolute;
+  top:0%;
+}
+
+.basso{
+  position:absolute;
+  bottom:0%;
+}
+
+.sinistra{
+  position:absolute;
+  left:0%;
+}
+
+.destra{
+  position:absolute;
+  right:0%;
+}
+
+.rotation{
+  animation:rotate 1s linear infinite;
+}
+
+.stop{
+  animation:rotate 1s forwards;
+}
+
+#q1{
+  background-color:red;
+}
+
+#q2{
+  background-color:blue;
+}
+
+#q3{
+  background-color:green;
+}
+
+#q4{
+  background-color:yellow;;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="q1" class="quadrato alto sinistra"></div>
+    <div id="q2" class="quadrato alto destra"></div>
+    <div id="q3" class="quadrato basso destra"></div>
+    <div id="q4" class="quadrato basso sinistra"></div>
+  </div>
+
+  <script>
+
+function trasforma() {
+  if($("#q1").hasClass("sinistra")){
+    $("#q1").removeClass("sinistra")
+    $("#q1").addClass("destra")
+    $("#q2").removeClass("destra")
+    $("#q2").addClass("sinistra")}
+
+  else if($("#q1").hasClass("destra")){
+    $(".container").addClass("rotation")}
+  }
+
+ function stop(){
+  $(".container").removeClass("rotation")
+  }
+
+  $(".quadrato").hover(stop)
+
+//$(selector).hover(inFunction,outFunction)//
+
+  $("#q1").click(trasforma)
+
+  </script>
+
+</body>
+
+</html>

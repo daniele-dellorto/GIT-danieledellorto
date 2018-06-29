@@ -1,0 +1,157 @@
+<html>
+
+<head>
+
+  <script src="jquery.js"></script>
+
+  <style>
+
+  html, body {margin: 0; height: 100%; overflow: hidden}
+
+  @keyframes spostamento{
+    from{top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);}
+    to{top:50%;
+      left:150%;
+      transform:translate(-50%,-50%);}
+  }
+
+  @keyframes spostamentoneg{
+    from{top:50%;
+      left:150%;
+      transform:translate(-50%,-50%);}
+    to{top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);}
+  }
+
+  @keyframes quad{
+    from{
+      position:absolute;
+      width:20vh;
+      height:20vh;
+      border-radius:50%;
+      transform:translate(-50%,-50%);}
+    to{
+      position:absolute;
+      width:20vh;
+      height:20vh;
+      border-radius:0%;
+      transform:translate(-50%,-50%);}
+  }
+
+  @keyframes rotazione{
+    from{
+    transform:translate(-50%,-50%) rotate(0deg)}
+    to{
+    transform:translate(-50%,-50%) rotate(360deg)}
+  }
+
+  .quadrato{
+    position:absolute;
+    width:20vh;
+    height:20vh;
+  }
+
+  .cerchio{
+    position:absolute;
+    width:20vh;
+    height:20vh;
+    border-radius:50%;
+  }
+
+  .centro{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  .fuori{
+    top:50%;
+    left:150%;
+    transform:translate(-50%,-50%);
+  }
+
+  .verde{
+    background-color: green;
+  }
+
+  .blu{
+    background-color: blue;
+  }
+
+  .rosso{
+    background-color: red;
+  }
+
+  .infuori{
+    animation: spostamento 2s forwards;
+  }
+
+  .incentro{
+    animation: spostamentoneg 2s forwards;
+  }
+
+  .inquad{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: quad 2s forwards;
+  }
+
+  .rotante{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation: rotazione 2s linear infinite;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="q1" class="quadrato centro verde"></div>
+
+  <div id="c1" class="cerchio fuori blu"></div>
+
+  <script>
+
+  function scambio (){
+    $("#q1").removeClass("centro")
+    $("#q1").addClass("infuori")
+    $("#c1").removeClass("fuori")
+    $("#c1").addClass("incentro")
+  }
+
+  $("#q1").click(scambio)
+
+  function scambio2 (){
+    if($("#c1").hasClass("rotante")){
+       $("#c1").removeClass("rotante")
+       $("#c1").addClass("infuori")
+       $("#q1").removeClass("infuori")
+       $("#q1").addClass("incentro")}
+    else if($("#c1").hasClass("rosso")){
+       $("#c1").addClass("rotante")
+       $("#c1").removeClass("incentro")
+       $("#c1").addClass("centro")
+       $("#c1").removeClass("inquad")
+       $("#c1").addClass("quadrato")}
+    else{$("#c1").removeClass("cerchio")
+         $("#c1").addClass("inquad")
+         $("#c1").removeClass("blu")
+         $("#c1").addClass("rosso")}
+    }
+
+  $("#c1").click(scambio2)
+
+
+
+  </script>
+
+</body>
+
+</html>

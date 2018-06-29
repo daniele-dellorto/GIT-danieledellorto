@@ -1,0 +1,96 @@
+<html>
+
+<head>
+
+  <script src="jquery.js"></script>
+
+  <style>
+
+  #quadrato{
+    background-color: red;
+    width:33vh;
+    height:33vh;
+  }
+
+  #quadrato2{
+    background-color: blue;
+    width:17vh;
+    height:17vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  #container{
+    position:absolute;
+    top:50vh;
+    left:50vw;
+    transform:translate(-50%,-50%);
+  }
+
+  @keyframes rotation{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(225deg)}
+  }
+
+  @keyframes rotgrande{
+    from{transform: rotate(225deg)}
+    to{transform: rotate(585deg)}
+  }
+
+  @keyframes rotpiccolo{
+    from{transform: translate(-50%,-50%) rotate(225deg)}
+    to{transform: translate(-50%,-50%) rotate(-135deg)}
+  }
+
+  .invisible{
+    visibility: hidden;
+  }
+
+  .rotate{
+    animation: rotation 0.5s linear forwards;
+  }
+
+  .rotategrande{
+    animation: rotgrande 1s linear infinite;
+  }
+
+  .rotatepiccolo{
+    animation: rotpiccolo 1s linear infinite;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="quadrato">
+     </div>
+    <div id="quadrato2" class="invisible">
+     </div>
+  </div>
+
+  <script>
+
+function rotazione () {
+  if($("#quadrato").hasClass("pronto")){
+    $("#quadrato").addClass("rotategrande")
+    $("#quadrato2").addClass("rotatepiccolo")}
+
+  else if($("#quadrato").hasClass("rotate")){
+    $("#quadrato2").removeClass("invisible")
+    $("#quadrato").addClass("pronto")}
+
+  else
+    $("#quadrato").addClass("rotate")
+}
+
+$("#quadrato").click(rotazione)
+
+  </script>
+
+
+</body>

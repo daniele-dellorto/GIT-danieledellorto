@@ -1,0 +1,101 @@
+<html>
+
+<head>
+
+  <script src="jquery.js"></script>
+
+  <style>
+
+  @keyframes infuori{
+    from{left:50%;
+         transform:translate(-50%,-50%)}
+    to{left:150%;
+         transform:translate(-50%,-50%)}
+  }
+
+  @keyframes incentro{
+    from{left:150%;
+         transform:translate(-50%,-50%)}
+    to{left:50%;
+         transform:translate(-50%,-50%)}
+  }
+
+  @keyframes inquadro{
+    from{border-radius:50%}
+    to{border-radius:0%}
+  }
+
+  .quadrato{
+    height:15vh;
+    width:15vh;
+    position:absolute;
+  }
+
+  .cerchio{
+    height:15vh;
+    width:15vh;
+    border-radius:50%;
+    position:absolute;
+  }
+
+  .verde{
+    background-color: green;
+  }
+
+  .blu{
+    background-color: blue;
+  }
+
+  .centro{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .fuori{
+    top:50%;
+    left:150%;
+    transform: translate(-50%,-50%);
+  }
+
+  .infuora{
+    animation: infuori 1s forwards;
+  }
+
+  .incentra{
+    animation: incentro 1s forwards;
+  }
+
+  .inquadra{
+    animation: inquadro 1s forwards;
+  }
+
+  </style>
+
+  <body>
+
+    <div id="q1" class="quadrato centro verde"></div>
+    <div id="c1" class="cerchio fuori blu"></div>
+
+    <script>
+
+    function scambio(){
+      $("#q1").addClass("infuora")
+      $("#c1").addClass("incentra")
+    }
+
+    $("#q1").click(scambio)
+
+    function contatore(){
+      $("#c1").removeClass("fuori")
+      $("#c1").addClass("centro")
+      $("#c1").addClass("inquadra")
+    }
+
+    $("#c1").click(contatore)
+
+    </script>
+
+  </body>
+
+  </html>

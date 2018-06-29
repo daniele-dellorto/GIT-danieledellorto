@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+  <script src="jquery.js"></script>
+
+  <style>
+
+  #container1{
+    width:30vh;
+    height:30vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  #container2{
+    width:50vh;
+    height:50vh;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  #stella{
+    background-color: yellow;
+    width:5vh;
+    height:5vh;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+
+  #pianeta1{
+    background-color: blue;
+    width:5vh;
+    height:5vh;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:100%;
+    transform:translate(-50%,-50%);
+  }
+
+  #pianeta2{
+    background-color: red;
+    width:5vh;
+    height:5vh;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:100%;
+    transform:translate(-50%,-50%);
+  }
+
+  @keyframes rotate1{
+    from {transform: translate(-50%,-50%) rotate(0deg)}
+    to {transform: translate(-50%,-50%) rotate(360deg)}
+  }
+
+  @keyframes rotate2{
+    from {transform: translate(-50%,-50%) rotate(0deg)}
+    to {transform: translate(-50%,-50%) rotate(-360deg)}
+  }
+
+  .rotation1{
+    animation:rotate1 1s linear infinite;
+  }
+
+  .rotation2{
+    animation:rotate2 1s linear infinite;
+  }
+
+  .invisible{
+    display:none;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div id=container2>
+    <div id="pianeta2" class="invisible"></div>
+  </div>
+  <div id=container1>
+    <div id="pianeta1"></div>
+  </div>
+  <div id="stella"></div>
+
+  <script>
+
+  function trasforma(){
+    if($("#container2").hasClass("rotation2")){
+      $("#container1").removeClass("rotation1")
+      $("#container1").addClass("rotation2")
+      $("#container2").removeClass("rotation2")
+      $("#container2").addClass("rotation1")}
+    else if($("#container1").hasClass("rotation1")){
+      $("#pianeta2").removeClass("invisible")
+      $("#container2").addClass("rotation2")}
+    else
+      $("#container1").addClass("rotation1")
+  }
+
+  $("#stella").click(trasforma)
+
+  </script>
+
+</body>
+
+</html>
