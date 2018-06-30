@@ -3,6 +3,7 @@ html, body {margin: 0; height: 100%; background-color: black;}
 div.gallery img {
     width: 100%;
     height: auto;
+    border:2px solid white;
 }
 
 * {
@@ -31,4 +32,32 @@ h2{
 
 .invisible{
   visibility:hidden;
+}
+
+.title1{
+  width:50vw;
+  height:100vh;
+  position:absolute;
+  left:50vw;
+  top:4vh;
+  text-align:center;
+}
+
+.title2{
+  width:50vw;
+  height:100vh;
+  position:absolute;
+  left:0vw;
+  top:4vh;
+  text-align:center;
+}
+
+.quote{
+  color:white;
+  width:30vw;
+  position:absolute;
+  top:50vh;
+  left:25vw;
+  transform:translate(-50%,-50%);
+  text-align:center;
 }

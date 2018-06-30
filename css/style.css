@@ -216,11 +216,17 @@ a:hover {
   color:black;
 }
 
-.contacts{
-  text-align:center;
-  left:25%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  color:white;
-  font-weight:bold;
+.insta{
+  position:absolute;
+  top:0vh;
+  visibility: hidden;
+}
+
+@keyframes linkapp{
+  from{visibility:hidden;}
+  to:{visibility:visible;}
+}
+
+.insta1{
+  animation:linkapp 1s;
 }
