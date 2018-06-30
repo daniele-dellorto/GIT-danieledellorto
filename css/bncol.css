@@ -10,16 +10,16 @@ div.gallery img {
     box-sizing: border-box;
 }
 
-.gallery {
-    padding: 15px;
-    float: left;
-    width: 50%;
-}
-
 h2{
   color:white;
   text-align:center;
   font-size:2em;
+}
+
+.gallery {
+    padding: 15px;
+    float: left;
+    width: 50%;
 }
 
 .bianco{
@@ -28,10 +28,6 @@ h2{
 
 .scomp{
   opacity:0;
-}
-
-.invisible{
-  visibility:hidden;
 }
 
 .title1{

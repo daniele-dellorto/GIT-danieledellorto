@@ -1,50 +1,5 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-#intro{
-  font-size: 15em;
-  font-weight: bold;
-  color: white;
-}
-
-.text1{
-  font-size:2em;
-  font-weight: bold;
-  background-color: #B52828;
-  color: white;
-}
-
-.quote{
-  font-size:1em;
-  font-weight: bold;
-  background-color: #B52828;
-  color: white;
-}
-
-h1{
-  color: #B52828;
-  font-weight:bold;
-  font-size:6em;
-  text-align: center;
-}
-
-h2{
-  color: #B52828;
-  font-weight:bold;
-  font-size:4em;
-  text-align: center;
-}
-
-.large{
- background-color: #B52828;
- width:30%;
-}
-
-.narrow{
- background-color: #B52828;
- width:14%;
- font-size:1.5em;
-}
-
 .hero-full-screen {
  height: 100vh;
  display: -webkit-flex;
@@ -75,32 +30,6 @@ h2{
   background: url("../immagini/bg3.PNG") center center no-repeat;
   background-size: cover;
 }
-
-.background4{
-  background: url("../immagini/bg4.JPG") center center no-repeat;
-  background-size: cover;
-}
-
-.paragrafi{
-          text-align:left;
-        }
-
-.background3 .middle-content-section{
-          position:relative;
-          top:50vh;
-          transform:translate(0,-80%);
-        }
-
-.background2 .middle-content-section{
-          position:relative;
-          top:-30vh;
-        }
-
-.about .middle-content-section{
-          position:relative;
-          top:-30vh;
-          width:60vw;
-        }
 
 .middle-content-section {
   text-align: center;
@@ -150,6 +79,20 @@ h2{
           align-items: center;
 }
 
+h1{
+  color: #B52828;
+  font-weight:bold;
+  font-size:6em;
+  text-align: center;
+}
+
+h2{
+  color: #B52828;
+  font-weight:bold;
+  font-size:4em;
+  text-align: center;
+}
+
 a {
   color: #fefefe;
   font-weight: bold;
@@ -163,6 +106,14 @@ a:hover {
 
 .background3 a:hover {
   color: #B52828;
+}
+
+.column a{
+  color:black;
+}
+
+.background3 a{
+  color:black;
 }
 
 .link:before {
@@ -186,9 +137,29 @@ a:hover {
   transform: scaleX(1);
 }
 
-.button:hover{
-  background-color: #B52828;
+#intro{
+  font-size: 15em;
+  font-weight: bold;
+  color: white;
 }
+
+.text1{
+  font-size:2em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+.quote{
+  font-size:1em;
+  font-weight: bold;
+  background-color: #B52828;
+  color: white;
+}
+
+.paragrafi{
+          text-align:left;
+        }
 
 .column{
   height:100vh;
@@ -206,14 +177,6 @@ a:hover {
 .c2{
   position:absolute;
   right:0vw;
-}
-
-.column a{
-  color:black;
-}
-
-.background3 a{
-  color:black;
 }
 
 .insta{
