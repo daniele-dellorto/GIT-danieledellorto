@@ -230,3 +230,25 @@ a:hover {
 .insta1{
   animation:linkapp 1s;
 }
+
+@keyframes intro{
+  0%{top:50%;left:50%;transform:translate(-50%,-50%);}
+  14%{top:150%;left:50%;transform:translate(-50%,-50%);}
+  18%{top:150%;left:150%;transform:translate(-50%,-50%);}
+  22%{top:-50%;left:150%;transform:rotate(180deg) translate(50%,50%);}
+  36%{top:5%;left:90%;transform:rotate(180deg) translate(50%,50%);}
+  50%{top:-50%;left:150%;transform:rotate(180deg) translate(50%,50%);}
+  54%{top:-50%;left:-50%;transform:rotate(180deg) translate(50%,50%);}
+  58%{top:150%;left:-50%;transform:translate(-50%,-50%);}
+  72%{top:95%;left:10%;transform:translate(-50%,-50%);}
+  86%{top:150%;left:-50%;transform:translate(-50%,-50%);}
+  90%{top:-50%;left:-50%;transform: translate(-50%,-50%);}
+  94%{top:-50%;left:50%;transform: translate(-50%,-50%);}
+  100%{top:50%;left:50%;transform: translate(-50%,-50%);}
+}
+
+.animate{
+  position:absolute;
+  visibility:visible;
+  animation:intro 5s forwards;
+}

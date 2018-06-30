@@ -33,3 +33,10 @@ function contactsneg(){
 }
 
 $(".hov").hover(contacts,contactsneg)
+
+function animateintro(){
+  $("#intro").addClass("animate")
+  $(".middle-content-section").addClass("invisible")
+}
+
+$("#transizione1").hover(animateintro)
