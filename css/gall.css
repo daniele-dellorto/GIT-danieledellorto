@@ -1,0 +1,6 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body{
+  background: url("../immagini/gall.JPG") center center no-repeat;
+  background-size: cover;
+}

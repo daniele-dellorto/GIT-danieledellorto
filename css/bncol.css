@@ -57,3 +57,12 @@ h2{
   transform:translate(-50%,-50%);
   text-align:center;
 }
+
+@keyframes appear{
+  from{color:black;}
+  to{color:white;}
+}
+
+.appearing{
+  animation:appear 2s forwards;
+}
