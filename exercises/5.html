@@ -1,94 +1,106 @@
 <html>
+
 <head>
+
   <script src="jquery.js"></script>
+
+  <style>
+
+  .quadrato{
+    width:15vh;
+    height:15vh;
+    position:absolute;
+  }
+
+  .alto{
+    top:0%;
+  }
+
+  .basso{
+    top:100%;
+  }
+
+  .sinistra{
+    left:0%;
+  }
+
+  .destra{
+    left:100%;
+  }
+
+  #q1{
+    background-color:red;
+  }
+
+  #q2{
+    background-color:blue;
+    transform:translate(-100%,0);
+  }
+
+  #q3{
+    background-color:green;
+    transform:translate(-100%,-100%);
+  }
+
+  #q4{
+    background-color:yellow;
+    transform:translate(0,-100%);
+  }
+
+  @keyframes centra{
+    to{top:50%;left:50%;transform:translate(-50%,-50%)}
+  }
+
+  @keyframes oscilla{
+    0%{top:50%;left:50%;transform:translate(-50%,-50%)}
+    25%{top:50%;left:25%;transform:translate(-50%,-50%)}
+    75%{top:50%;left:75%;transform:translate(-50%,-50%)}
+    100%{top:50%;left:50%;transform:translate(-50%,-50%)}
+  }
+
+  @keyframes ritorna{
+    from{top:50%;left:50%;transform:translate(-50%,-50%)}
+  }
+
+  .oscillante{
+    animation:oscilla 2s linear infinite;
+  }
+
+  .centrato{
+    animation:centra 1s forwards;
+  }
+
+  .ritornato{
+    animation:ritorna 1s linear forwards;
+  }
+
+  </style>
+
 </head>
-<style>
 
-.quadrato{
-  position:absolute;
-  height:15vh;
-  width:15vh;
-}
-
-.alto{
-  top:0%;
-}
-
-.basso{
-  bottom:0%;
-}
-
-.sinistra{
-  left:0%;
-}
-
-.destra{
-  right:0%;
-}
-
-#c1{
-  background-color:red;
-}
-
-#c2{
-  background-color:blue;
-}
-
-#c3{
-  background-color:yellow;
-}
-
-#c4{
-  background-color:green;
-}
-
-.centro{
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
-@keyframes oscilla{
-  0%{
-    left:50%;
-    transform: translate(-50%,-50%);}
-  25%{
-    left:25%;
-    transform: translate(-50%,-50%);}
-  75%{
-    left:75%;
-    transform: translate(-50%,-50%);}
-  100%{
-    left:50%;
-    transform: translate(-50%,-50%);}
-}
-
-.oscillante{
-  animation:oscilla 2s linear infinite;
-}
-
-</style>
 <body>
 
-  <div id="c1" class="quadrato alto sinistra"></div>
-  <div id="c2" class="quadrato alto destra"></div>
-  <div id="c3" class="quadrato basso destra"></div>
-  <div id="c4" class="quadrato basso sinistra"></div>
+  <div id="q1" class="quadrato alto sinistra"></div>
+  <div id="q2" class="quadrato alto destra"></div>
+  <div id="q3" class="quadrato basso destra"></div>
+  <div id="q4" class="quadrato basso sinistra"></div>
 
   <script>
 
-  function centra(){
+  function sequenza(){
     if($(this).hasClass("oscillante")){
-    $(this).removeClass("oscillante")
-    $(this).removeClass("centro")}
-    else if($(this).hasClass("centro")){
+      $(this).removeClass("oscillante")
+      $(this).addClass("ritornato")}
+    else if($(this).hasClass("centrato")){
+      $(this).removeClass("centrato")
       $(this).addClass("oscillante")}
-    else{
-      $(this).addClass("centro")}
+    else{$(this).addClass("centrato")}
   }
 
-  $(".quadrato").click(centra)
+  $(".quadrato").click(sequenza)
 
   </script>
+
 </body>
+
 </html>

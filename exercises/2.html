@@ -6,68 +6,91 @@
 
   <style>
 
-@keyframes rotate{
-  from {transform:translate(-50%,-50%) rotate(0deg);}
-  to {transform:translate(-50%,-50%) rotate(360deg);}
-}
+  .container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:60vh;
+    width:60vh;
+  }
 
-.container{
-  height:50vh;
-  width:50vh;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-.quadrato{
-  height:5vh;
-  width:5vh;
-  trasform:translate(-50%.-50%);
-}
+  .quadrato{
+    position:absolute;
+    width:4vh;
+    height:4vh;
+  }
 
-.alto{
-  position:absolute;
-  top:0%;
-}
+  .alto{
+    top:0%;
+  }
 
-.basso{
-  position:absolute;
-  bottom:0%;
-}
+  .basso{
+    top:100%;
+  }
 
-.sinistra{
-  position:absolute;
-  left:0%;
-}
+  .sinistra{
+    left:0%;
+  }
 
-.destra{
-  position:absolute;
-  right:0%;
-}
+  .destra{
+    left:100%;
+  }
 
-.rotation{
-  animation:rotate 1s linear infinite;
-}
+  @keyframes scambio1{
+    from{left:0;}
+    to{left:100%;transform:translate(-100%,0);}
+  }
 
-.stop{
-  animation:rotate 1s forwards;
-}
+  @keyframes scambio2{
+    from{left:100%;transform:translate(-100%,0);}
+    to{left:0;}
+  }
 
-#q1{
-  background-color:red;
-}
+  .scambiato1{
+    animation:scambio1 1s linear forwards;
+  }
 
-#q2{
-  background-color:blue;
-}
+  .scambiato2{
+    animation:scambio2 1s linear forwards;
+  }
 
-#q3{
-  background-color:green;
-}
+  .alto.destra{
+    transform:translate(-100%,0);
+  }
 
-#q4{
-  background-color:yellow;;
-}
+  .basso.destra{
+    transform:translate(-100%,-100%);
+  }
+
+  .basso.sinistra{
+    transform:translate(0,-100%);
+  }
+
+  #q1{
+    background-color:red;
+  }
+
+  #q2{
+    background-color:blue;
+  }
+
+  #q3{
+    background-color:green;
+  }
+
+  #q4{
+    background-color:yellow;
+  }
+
+  @keyframes rotazione{
+    from{transform:translate(-50%,-50%)rotate(0deg);}
+    to{transform:translate(-50%,-50%)rotate(360deg);}
+  }
+
+  .rotante{
+    animation:rotazione 1s linear infinite;
+  }
 
   </style>
 
@@ -84,26 +107,21 @@
 
   <script>
 
-function trasforma() {
-  if($("#q1").hasClass("sinistra")){
-    $("#q1").removeClass("sinistra")
-    $("#q1").addClass("destra")
-    $("#q2").removeClass("destra")
-    $("#q2").addClass("sinistra")}
-
-  else if($("#q1").hasClass("destra")){
-    $(".container").addClass("rotation")}
+  function sequenza(){
+    if($("#q1").hasClass("scambiato1")){
+      $(".container").addClass("rotante")}
+    else{$("#q1").removeClass("sinistra")
+         $("#q1").addClass("scambiato1")
+         $("#q2").removeClass("destra")
+         $("#q2").addClass("scambiato2")}
   }
 
- function stop(){
-  $(".container").removeClass("rotation")
-  }
+  $("#q1").click(sequenza)
+
+  function stop(){
+    $(".container").removeClass("rotante")}
 
   $(".quadrato").hover(stop)
-
-//$(selector).hover(inFunction,outFunction)//
-
-  $("#q1").click(trasforma)
 
   </script>
 
