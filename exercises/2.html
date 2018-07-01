@@ -118,10 +118,18 @@
 
   $("#q1").click(sequenza)
 
-  function stop(){
-    $(".container").removeClass("rotante")}
+  var timer;
+  var delay = 1000;
 
-  $(".quadrato").hover(stop)
+  $('.quadrato').hover(function() {
+    $(".container").removeClass("rotante")
+      timer = setTimeout(function() {
+       $(".container").removeClass("rotante")
+      }, delay);
+  }, function() {
+      clearTimeout(timer);
+  });
+
 
   </script>
 

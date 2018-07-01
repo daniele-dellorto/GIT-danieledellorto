@@ -196,17 +196,17 @@ a:hover {
 
 @keyframes intro{
   0%{top:50%;left:50%;transform:translate(-50%,-50%);}
-  14%{top:150%;left:50%;transform:translate(-50%,-50%);}
-  18%{top:150%;left:150%;transform:translate(-50%,-50%);}
-  22%{top:-50%;left:150%;transform:rotate(180deg) translate(50%,50%);}
+  14%{top:200%;left:50%;transform:translate(-50%,-50%);}
+  18%{top:200%;left:200%;transform:translate(-50%,-50%);}
+  22%{top:-100%;left:200%;transform:rotate(180deg) translate(50%,50%);}
   36%{top:5%;left:90%;transform:rotate(180deg) translate(50%,50%);}
-  50%{top:-50%;left:150%;transform:rotate(180deg) translate(50%,50%);}
-  54%{top:-50%;left:-50%;transform:rotate(180deg) translate(50%,50%);}
-  58%{top:150%;left:-50%;transform:translate(-50%,-50%);}
+  50%{top:-100%;left:200%;transform:rotate(180deg) translate(50%,50%);}
+  54%{top:-100%;left:-100%;transform:rotate(180deg) translate(50%,50%);}
+  58%{top:200%;left:-100%;transform:translate(-50%,-50%);}
   72%{top:95%;left:10%;transform:translate(-50%,-50%);}
-  86%{top:150%;left:-50%;transform:translate(-50%,-50%);}
-  90%{top:-50%;left:-50%;transform: translate(-50%,-50%);}
-  94%{top:-50%;left:50%;transform: translate(-50%,-50%);}
+  86%{top:200%;left:-100%;transform:translate(-50%,-50%);}
+  90%{top:-100%;left:-100%;transform: translate(-50%,-50%);}
+  94%{top:-100%;left:50%;transform: translate(-50%,-50%);}
   100%{top:50%;left:50%;transform: translate(-50%,-50%);}
 }
 
@@ -214,4 +214,13 @@ a:hover {
   position:absolute;
   visibility:visible;
   animation:intro 5s forwards;
+}
+
+@keyframes godown{
+  from{top:0vh;}
+  to{top:200vh;}
+}
+
+.down{
+  animation:godown 1s forwards;
 }

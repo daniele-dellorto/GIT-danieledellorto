@@ -18,9 +18,9 @@ function bnneg(){
   $("#immagine2").removeClass("scomp")
   $(".title1").addClass("invisible")}
 
-$("#pic1").hover(bn,bnneg)
+$("#immagine1").hover(bn,bnneg)
 
-$("#pic2").hover(col,colneg)
+$("#immagine2").hover(col,colneg)
 
 function contacts(){
   $(".insta").addClass("insta1")
@@ -40,3 +40,13 @@ function animateintro(){
 }
 
 $("#transizione1").hover(animateintro)
+
+function delay (URL) {
+    setTimeout( function() { window.location = URL }, 700 );
+}
+
+function about(){
+  $("#about").addClass("down")
+}
+
+$("#col").click(about)
